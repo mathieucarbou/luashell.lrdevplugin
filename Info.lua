@@ -20,9 +20,9 @@ return {
 
 	LrPluginName = LOC "$$$/Lua Shell/PluginName=Lua Shell",
 	
-	LrLibraryMenuItems = {
+	LrExportMenuItems = {
 		{
-		    title = LOC "$$$/Lua Shell/Shell=Lua shell window",
+		    title = LOC "$$$/Lua Shell/Shell=Lua Shell",
 		    file = "Shell.lua",
 		},
 	},

@@ -16,6 +16,8 @@ Shell.lua
 
 ------------------------------------------------------------------------------]]
 
+local inspect = require 'inspect'
+
 local LrFunctionContext = import 'LrFunctionContext'
 local LrBinding = import 'LrBinding'
 local LrDialogs = import 'LrDialogs'
@@ -60,6 +62,7 @@ local function shell()
 		env.catalog = LrApplication.activeCatalog()
 		env.target = env.catalog:getTargetPhoto()
 		env.targets = env.catalog:getTargetPhotos()
+        env.inspect = inspect
 
 		local historyField = f:edit_field { 
 			fill_horizontal = 1,
